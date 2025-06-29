@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="8dp" />
+
+        <!-- App Name and Version -->
+        <TextView
+            android:id="@+id/appHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silent Calendar v2.0.4"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp" />
+
+
+        <!-- Current Date -->
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- System Volume Status -->
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Mode: Unknown"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:gravity="start" />
+
+        <!-- Current Event -->
+        <TextView
+            android:id="@+id/labelCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Event"
+            android:textStyle="bold"
+            android:textColor="#008000"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/currentEventView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="8dp"
+            android:gravity="start"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Past Events -->
+        <TextView
+            android:id="@+id/labelPast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Past Events"
+            android:textStyle="bold"
+            android:textColor="#0000FF"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/pastEventsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="8dp"
+            android:gravity="start"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Upcoming Events -->
+        <TextView
+            android:id="@+id/labelUpcoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Events"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/upcomingEventsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="8dp"
+            android:gravity="start"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Spacing before footer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="320dp" /> <!-- Approx 20 lines vertical spacing -->
+
+        <!-- Footer Note -->
+        <TextView
+            android:id="@+id/footerNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this application is AI generated for TechnoHub with support of ChatGPT"
+            android:textSize="12sp"
+            android:gravity="start"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>
